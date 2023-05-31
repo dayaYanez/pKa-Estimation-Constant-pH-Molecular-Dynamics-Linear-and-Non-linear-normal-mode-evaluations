@@ -1,0 +1,1964 @@
+TCL: Reduction callback proc set to energyCallback
+TCL: namdcph) Setting up nonequilibrium alchemical switching.
+TCL: namdcph) clearing extraBondsFile 2/namdcph.sw.extrabonds
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   ../topology/preD950N.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  60 0 0
+Info: PERIODIC CELL BASIS 2  0 60 0
+Info: PERIODIC CELL BASIS 3  0 0 60
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    298
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           2/Pre2_0.dcd
+Info: DCD FREQUENCY          5000
+Info: DCD FIRST STEP         5000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        2/Pre2_0
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: NO RESTART FILE
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 2
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        18.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    50000
+Info: THERMODYNAMIC INTEGRATION (TI) ON
+Info: TI LAMBDA VALUE     0
+Info: TI INTRA-ALCHEMICAL NON-BONDED INTERACTIONS WILL BE DECOUPLED
+Info: TI INTRA-ALCHEMICAL BONDED INTERACTIONS WILL BE DECOUPLED
+Info: TI VDW SHIFTING COEFFICIENT 0
+Info: TI ELEC. ACTIVE FOR ANNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: TI ELEC. ACTIVE FOR EXNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: TI VDW ACTIVE FOR ANNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: TI VDW ACTIVE FOR EXNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: TI BOND ACTIVE FOR ANNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: TI BOND ACTIVE FOR EXNIHILATED PARTICLES BETWEEN LAMBDA = 0 AND LAMBDA = 1
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   298
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         60 60 60
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.13_Linux-x86_64-multicore.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.13_Linux-x86_64-multicore.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1685223630
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ../topology/preD950N.pdb
+Info: STRUCTURE FILE         ../topology/preD950N.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ../../toppar/par_all36_carb.prm
+Info: PARAMETERS             ../../toppar/par_all36_cgenff.prm
+Info: PARAMETERS             ../../toppar/par_all36_lipid.prm
+Info: PARAMETERS             ../../toppar/par_all36_na.prm
+Info: PARAMETERS             ../../toppar/par_all36_prot.prm
+Info: PARAMETERS             ../../toppar/par_all36_solvent.prm
+Info: PARAMETERS             ../../toppar/par_cph36_prot.prm
+Info: PARAMETERS             ../../toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             ../../toppar/toppar_water_ions_namd.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: SKIPPING rtf SECTION IN STREAM FILE
+Info: SKIPPING rtf SECTION IN STREAM FILE
+Info: SUMMARY OF PARAMETERS:
+Info: 925 BONDS
+Info: 2696 ANGLES
+Info: 6608 DIHEDRAL
+Info: 195 IMPROPER
+Info: 6 CROSSTERM
+Info: 366 VDW
+Info: 6 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.035058
+Info: READING EXTRA BONDS FILE 2/namdcph.sw.extrabonds
+Info: Reading pdb file ../topology/preD950N.pdb
+Info: TIME FOR READING PDB FILE: 0.00269985
+Info: 
+Info: To read alchdata from file: coordinate pdb file (default)
+Info: To read alchflag data from column: 5
+Info: LONG-RANGE LJ: APPLYING ANALYTICAL CORRECTIONS TO ENERGY AND PRESSURE
+Info: LONG-RANGE LJ: AVERAGE A0 AND B0 COEFFICIENTS 257940 AND 189.542
+Info: LONG-RANGE LJ: AVERAGE A1 AND B1 COEFFICIENTS 257940 AND 189.542
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 859 ATOMS
+Info: 860 BONDS
+Info: 1555 ANGLES
+Info: 2254 DIHEDRALS
+Info: 177 IMPROPERS
+Info: 54 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 436 RIGID BONDS
+Info: ALCH: 0 ATOMS TO DISAPPEAR IN FINAL STATE
+Info: ALCH: 0 ATOMS TO APPEAR IN FINAL STATE
+Info: 2141 DEGREES OF FREEDOM
+Info: 423 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 423 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 6018.79 amu
+Info: TOTAL CHARGE = 2 e
+Info: MASS DENSITY = 0.0462716 g/cm^3
+Info: ATOM DENSITY = 0.00397685 atoms/A^3
+Info: *****************************
+Info: 
+Info: Entering startup at 0.410783 s, 2722.15 MB of memory in use
+Info: Startup phase 0 took 0.000782013 s, 2722.15 MB of memory in use
+Info: ADDED 4663 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.002388 s, 2722.15 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00666404 s, 2725.71 MB of memory in use
+Info: Startup phase 3 took 0.000844002 s, 2725.71 MB of memory in use
+Info: Startup phase 4 took 0.000925064 s, 2725.71 MB of memory in use
+Info: Startup phase 5 took 0.000691891 s, 2725.71 MB of memory in use
+Info: PATCH GRID IS 3 (PERIODIC) BY 3 (PERIODIC) BY 2 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY -0.0668867 0.00895681 -0.104447
+Info: LARGEST PATCH (4) HAS 418 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.00450015 s, 2725.86 MB of memory in use
+Info: PME using 30 and 30 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 1 2 3 5 6 7 9 10 11 13 ...
+Info: PME TRANS LOCATIONS: 1 2 3 4 5 6 8 9 10 12 ...
+Info: PME USING 1 GRID NODES AND 1 TRANS NODES
+Info: Startup phase 7 took 0.00249696 s, 2725.86 MB of memory in use
+Info: Startup phase 8 took 0.000660896 s, 2725.86 MB of memory in use
+Info: Startup phase 9 took 0.000730991 s, 2725.86 MB of memory in use
+Info: Startup phase 10 took 0.000730038 s, 2725.86 MB of memory in use
+Info: Startup phase 11 took 0.00104308 s, 2725.86 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00112295 s, 2725.86 MB of memory in use
+Info: CREATING 450 COMPUTE OBJECTS
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.00490689 s, 2725.86 MB of memory in use
+Info: Startup phase 14 took 0.00111914 s, 2725.86 MB of memory in use
+Info: Startup phase 15 took 0.000608921 s, 2726.11 MB of memory in use
+Info: Finished startup at 0.440998 s, 2726.11 MB of memory in use
+
+TCL: Setting parameter alchLambdaFreq to 1
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+TCL: Setting parameter alch to off
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+TCL: namdcph) initializing constant pH PSF...
+psfgen) clearing structure, preserving topology and aliases
+psfgen) reading structure from psf file ../topology/preD950N.psf
+psfgen) reading coordinates, insertion codes, and element symbols from pdb file ../topology/preD950N.pdb
+psfgen) applying patch GLUD to 1 residue(s)
+PP1:918 
+TCL: WARNING! Building new atom PP1:918:HE1 with unknown mass.
+TCL:          This may cause issues, for example, with mass repartitioning.
+TCL: WARNING! Building new atom PP1:918:HE2 with unknown mass.
+TCL:          This may cause issues, for example, with mass repartitioning.
+psfgen) applying patch LYS1 to 1 residue(s)
+PP1:921 
+psfgen) applying patch LYS3 to 1 residue(s)
+PP1:933 
+psfgen) applying patch ASPD to 1 residue(s)
+PP1:936 
+TCL: WARNING! Building new atom PP1:936:HD1 with unknown mass.
+TCL:          This may cause issues, for example, with mass repartitioning.
+TCL: WARNING! Building new atom PP1:936:HD2 with unknown mass.
+TCL:          This may cause issues, for example, with mass repartitioning.
+psfgen) applying patch LYS3 to 1 residue(s)
+PP1:947 
+psfgen) applying patch LYS1 to 1 residue(s)
+PP1:964 
+psfgen) Info: guessing coordinates for 4 atoms (0 non-hydrogen)
+TCL: cphpsfgen) creating new alchemical side chain for PP1:918:GLU
+psfgen) applying patch GLUH2 to 1 residue(s)
+PP1:918 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:918:GLU
+TCL: cphpsfgen) creating new alchemical side chain for PP1:921:LYS
+psfgen) applying patch LYSHP to 1 residue(s)
+PP1:921 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:921:LYS
+TCL: cphpsfgen) creating new alchemical side chain for PP1:933:LYS
+psfgen) applying patch LYSHP to 1 residue(s)
+PP1:933 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:933:LYS
+TCL: cphpsfgen) creating new alchemical side chain for PP1:936:ASP
+psfgen) applying patch ASPH1 to 1 residue(s)
+PP1:936 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:936:ASP
+TCL: cphpsfgen) creating new alchemical side chain for PP1:947:LYS
+psfgen) applying patch LYSHP to 1 residue(s)
+PP1:947 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:947:LYS
+TCL: cphpsfgen) creating new alchemical side chain for PP1:964:LYS
+psfgen) applying patch LYSHP to 1 residue(s)
+PP1:964 
+TCL: cphpsfgen) merging alchemical sidechains for PP1:964:LYS
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+TCL: namdcph) ***************************************
+TCL: namdcph) CONSTANT pH MD ACTIVE
+TCL: namdcph) SYSTEM pH 2
+TCL: namdcph) CONSTANT pH CONFIGURATION FILE(S)
+TCL: namdcph) ../../toppar/conf_cph36_prot.json
+TCL: namdcph) NONEQUILIBRIUM SWITCH PARAMETERS:
+TCL: namdcph) ALCHEMICAL FORCE CONSTANT 100.0 kcal/mol-A^2
+TCL: namdcph) neMD/MC CRITERION TEMPERATURE 298.0
+TCL: namdcph) TEMPORARY FILE INFORMATION:
+TCL: namdcph) cpH TOPOLOGY FILE BASENAME 2/namdcph.md
+TCL: namdcph) neMD/MC TRAJECTORY BASENAME 2/namdcph.sw
+TCL: namdcph) ***************************************
+TCL: namdcph) ***************************************
+TCL: namdcph) TITRATABLE RESIDUE DEFINITIONS:
+TCL: namdcph) HIS ASP GLU CYS LYS
+TCL: namdcph) TITRATABLE SYSTEM SUMMARY:
+TCL: namdcph) 6 RESIDUE(S)
+TCL: namdcph) 16 PROTONATION SITE(S)
+TCL: namdcph) ***************************************
+TCL: namdcph) segid:resid:resname : state : pKai
+TCL: namdcph) PP1:918:GLU         :     2 : 4.68
+TCL: namdcph) PP1:921:LYS         :     P : 10.47
+TCL: namdcph) PP1:933:LYS         :     P : 10.42
+TCL: namdcph) PP1:936:ASP         :     1 : 3.83
+TCL: namdcph) PP1:947:LYS         :     P : 10.47
+TCL: namdcph) PP1:964:LYS         :     P : 10.40
+TCL: namdcph) ***************************************
+TCL: namdcph) *************************************************
+TCL: namdcph) CONSTANT pH neMD/MC MOVES:
+TCL: namdcph) MAX. ATTEMPTS PER CYCLE: 1
+TCL: namdcph) ONE RESIDUE MOVES
+TCL: namdcph) move label     : numsteps   weight
+TCL: namdcph) PP1:918:GLU    :    75000     1.00
+TCL: namdcph) PP1:921:LYS    :    75000     1.00
+TCL: namdcph) PP1:933:LYS    :    75000     1.00
+TCL: namdcph) PP1:936:ASP    :    75000     1.00
+TCL: namdcph) PP1:947:LYS    :    75000     1.00
+TCL: namdcph) PP1:964:LYS    :    75000     1.00
+TCL: namdcph) *************************************************
+psfgen) Info: writing psf file 2/namdcph.md.psf
+psfgen) total of 863 atoms
+psfgen) total of 864 bonds
+psfgen) total of 1559 angles
+psfgen) total of 2262 dihedrals
+psfgen) total of 177 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) total of 54 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file 2/namdcph.md.pdb
+psfgen) Info: pdb file complete.
+psfgen) Info: writing namdbin file 2/namdcph.md.coor
+psfgen) Info: writing velnamdbin file 2/namdcph.md.vel
+psfgen) Info: namdbin file complete.
+psfgen) Info: velnamdbin file complete.
+TCL: namdcph) clearing extraBondsFile 2/namdcph.sw.extrabonds
+TCL: Reloading molecular structure from file 2/namdcph.md.psf and pdb file 2/namdcph.md.pdb
+Info: TIME FOR READING PSF FILE: 0.0373549
+Info: READING EXTRA BONDS FILE 2/namdcph.sw.extrabonds
+Info: Reading pdb file 2/namdcph.md.pdb
+Info: TIME FOR READING PDB FILE: 0.00324178
+Info: 
+Info: LONG-RANGE LJ: APPLYING ANALYTICAL CORRECTIONS TO ENERGY AND PRESSURE
+Info: LONG-RANGE LJ: AVERAGE A AND B COEFFICIENTS 257281 AND 189.022
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 863 ATOMS
+Info: 864 BONDS
+Info: 1559 ANGLES
+Info: 2262 DIHEDRALS
+Info: 177 IMPROPERS
+Info: 54 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 440 RIGID BONDS
+Info: 2149 DEGREES OF FREEDOM
+Info: 423 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 423 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 6022.82 amu
+Info: TOTAL CHARGE = 4 e
+Info: MASS DENSITY = 0.0463026 g/cm^3
+Info: ATOM DENSITY = 0.00399537 atoms/A^3
+Info: *****************************
+Info: ADDED 4679 IMPLICIT EXCLUSIONS
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+TCL: Reinitializing atom data from files with basename 2/namdcph.md
+Info: Reading from binary file 2/namdcph.md.coor
+Info: Reading from binary file 2/namdcph.md.vel
+Info: REMOVING COM VELOCITY -0.0398796 0.0358484 -0.0538998
+REINITIALIZING VELOCITIES AT STEP 0 TO 298 KELVIN.
+TCL: Minimizing for 100 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0        62.2166       105.4441       437.8759         0.5598           -644.3303 99999999999.9999         0.0000         0.0000         0.0000      99999999999.9999         0.0000 99999999999.9999 99999999999.9999         0.0000      99999999999.9999 99999999999.9999    216000.0000 99999999999.9999 99999999999.9999
+
+MINIMIZER SLOWLY MOVING 72 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       1       185.4737       142.3450       440.9482         3.1818           -635.9247 12767719542.4718         0.0000         0.0000         0.0000      12767719678.4959         0.0000 12767719678.4959 12767719678.4959         0.0000      12481036432.3020 14035994157.2694    216000.0000 12481036432.3020 14035994157.2694
+
+MINIMIZER SLOWLY MOVING 63 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       2       545.3409       227.8980       448.0281         9.9131           -630.8295 106484557.7279         0.0000         0.0000         0.0000      106485158.0786         0.0000 106485158.0786 106485158.0786         0.0000      137055198.4020 159726135.4233    216000.0000 137055198.4020 159726135.4233
+
+MINIMIZER SLOWLY MOVING 56 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       3      1075.2374       339.8271       458.8210        23.9448           -632.2622   2749885.3169         0.0000         0.0000         0.0000        2751150.8851         0.0000   2751150.8851   2751150.8851         0.0000        3541741.0695   4337157.8326    216000.0000   3541741.0695   4337157.8326
+
+MINIMIZER SLOWLY MOVING 46 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       4      1811.1040       486.6502       475.5293        40.2632           -636.5334    314357.9465         0.0000         0.0000         0.0000         316534.9598         0.0000    316534.9598    316534.9598         0.0000         405954.2081    458158.4637    216000.0000    405954.2081    458158.4637
+
+MINIMIZER SLOWLY MOVING 41 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       5      2576.9404       651.5506       497.9856        64.7789           -641.7861     91057.3252         0.0000         0.0000         0.0000          94206.7945         0.0000     94206.7945     94206.7945         0.0000         117924.8930    125647.9404    216000.0000    117924.8930    125647.9404
+
+MINIMIZER SLOWLY MOVING 34 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       6      3416.4387       829.6944       517.8743        90.5046           -645.9818     40975.4832         0.0000         0.0000         0.0000          45184.0134         0.0000     45184.0134     45184.0134         0.0000          53012.8844     57424.0122    216000.0000     53012.8844     57424.0122
+
+MINIMIZER SLOWLY MOVING 26 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       7      4076.1265       996.1523       519.2334       113.3417           -649.4090     24730.5526         0.0000         0.0000         0.0000          29785.9975         0.0000     29785.9975     29785.9975         0.0000          31791.4789     35848.4265    216000.0000     31791.4789     35848.4265
+
+MINIMIZER SLOWLY MOVING 16 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       8      4384.9657      1100.4669       519.7857       104.6995           -650.6729     18742.6523         0.0000         0.0000         0.0000          24201.8973         0.0000     24201.8973     24201.8973         0.0000          23949.7837     28070.6607    216000.0000     23949.7837     28070.6607
+
+MINIMIZER SLOWLY MOVING 7 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       9      4647.8577      1198.2448       520.1918       107.5357           -652.2261     15976.2364         0.0000         0.0000         0.0000          21797.8403         0.0000     21797.8403     21797.8403         0.0000          20292.5415     24157.0369    216000.0000     20292.5415     24157.0369
+
+MINIMIZER SLOWLY MOVING 6 ATOMS WITH BAD CONTACTS DOWNHILL
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      10      4816.4163      1271.8430       520.8438       107.6006           -652.1172     12768.2762         0.0000         0.0000         0.0000          18832.8627         0.0000     18832.8627     18832.8627         0.0000          16094.7723     19181.5733    216000.0000     16094.7723     19181.5733
+
+MINIMIZER SLOWLY MOVING 3 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:      11      4901.5791      1327.8317       523.0515       107.5351           -652.1798     11742.3167         0.0000         0.0000         0.0000          17950.1343         0.0000     17950.1343     17950.1343         0.0000          14747.0737     17464.4437    216000.0000     14747.0737     17464.4437
+
+MINIMIZER SLOWLY MOVING 1 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:      12      4901.4133      1331.2758       523.1015       107.5351           -652.2113     11654.0627         0.0000         0.0000         0.0000          17865.1771         0.0000     17865.1771     17865.1771         0.0000          14632.4698     17261.5174    216000.0000     14632.4698     17261.5174
+
+MINIMIZER STARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 1.36968e+08 TO 136968
+ENERGY:      13      4855.1614      1302.3138       512.8135        94.6120           -654.3998      7973.7109         0.0000         0.0000         0.0000          14084.2118         0.0000     14084.2118     14084.2118         0.0000           9913.4706     10926.2197    216000.0000      9913.4706     10926.2197
+
+ENERGY:      14      4848.2396      1318.8332       507.0591        89.2215           -656.1730      5947.7208         0.0000         0.0000         0.0000          12054.9011         0.0000     12054.9011     12054.9011         0.0000           7317.9750      8020.8128    216000.0000      7317.9750      8020.8128
+
+ENERGY:      15      4881.3324      1377.8551       504.0393        91.1612           -657.6142      4757.9037         0.0000         0.0000         0.0000          10954.6776         0.0000     10954.6776     10954.6776         0.0000           5787.9838      6371.6216    216000.0000      5787.9838      6371.6216
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 2.54172e+07 TO 25417.2
+ENERGY:      16      4431.5554      1290.0066       505.2737        84.8128           -659.5498      4310.1855         0.0000         0.0000         0.0000           9962.2842         0.0000      9962.2842      9962.2842         0.0000           5344.2286      5745.8621    216000.0000      5344.2286      5745.8621
+
+ENERGY:      17      4009.3731      1227.5752       506.2933        81.4470           -661.4848      4196.3321         0.0000         0.0000         0.0000           9359.5359         0.0000      9359.5359      9359.5359         0.0000           5321.6398      5703.1877    216000.0000      5321.6398      5703.1877
+
+ENERGY:      18      3617.3716      1187.6468       507.1204        80.6022           -663.4919      4356.5736         0.0000         0.0000         0.0000           9085.8227         0.0000      9085.8227      9085.8227         0.0000           5642.5345      6072.1361    216000.0000      5642.5345      6072.1361
+
+ENERGY:      19      3257.8763      1167.4360       507.8329        81.8247           -665.6367      4910.7773         0.0000         0.0000         0.0000           9260.1105         0.0000      9260.1105      9260.1105         0.0000           6461.0587      7017.0251    216000.0000      6461.0587      7017.0251
+
+LDB: ============= START OF LOAD BALANCING ============== 0.686837
+LDB: ============== END OF LOAD BALANCING =============== 0.687351
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 0.688651
+LINE MINIMIZER BRACKET: DX 5.22471e-05 5.22471e-05 DU -273.713 174.288 DUDX -8.45505e+06 -1.45124e+06 9.40173e+06 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      20      3560.7611      1183.2502       507.2327        80.6655           -663.8107      4409.8681         0.0000         0.0000         0.0000           9077.9668         0.0000      9077.9668      9077.9668         0.0000           5727.6897      6169.2943    216000.0000      5727.6897      6169.2943
+
+LINE MINIMIZER BRACKET: DX 7.91958e-06 4.43275e-05 DU -7.85584 182.144 DUDX -1.45124e+06 -147639 9.40173e+06 
+ENERGY:      21      3529.3888      1181.0595       507.2951        80.7210           -663.9881      4443.9592         0.0000         0.0000         0.0000           9078.4356         0.0000      9078.4356      9078.4356         0.0000           5780.7326      6230.1893    216000.0000      5780.7326      6230.1893
+
+LINE MINIMIZER BRACKET: DX 7.91958e-06 4.43275e-06 DU -7.85584 0.468723 DUDX -1.45124e+06 -147639 629367 
+ENERGY:      22      3551.5967      1182.5970       507.2510        80.6802           -663.8623      4419.4864         0.0000         0.0000         0.0000           9077.7491         0.0000      9077.7491      9077.7491         0.0000           5742.7478      6186.5777    216000.0000      5742.7478      6186.5777
+
+LINE MINIMIZER BRACKET: DX 1.29144e-06 3.14132e-06 DU -0.217765 0.686489 DUDX -147639 75461.2 629367 
+ENERGY:      23      3553.0121      1182.6971       507.2481        80.6778           -663.8543      4417.9825         0.0000         0.0000         0.0000           9077.7633         0.0000      9077.7633      9077.7633         0.0000           5740.3988      6183.8814    216000.0000      5740.3988      6183.8814
+
+LINE MINIMIZER BRACKET: DX 1.99631e-07 3.14132e-06 DU -0.0142802 0.686489 DUDX 40793.2 75461.2 629367 
+ENERGY:      24      3551.5967      1182.5970       507.2510        80.6802           -663.8623      4419.4864         0.0000         0.0000         0.0000           9077.7491         0.0000      9077.7491      9077.7491         0.0000           5742.7478      6186.5776    216000.0000      5742.7478      6186.5776
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 3.83761e+07 TO 38376.1
+ENERGY:      25      3460.5341      1170.2068       506.5437        72.9959           -662.1856      3879.6863         0.0000         0.0000         0.0000           8427.7813         0.0000      8427.7813      8427.7813         0.0000           5077.0280      5458.4651    216000.0000      5077.0280      5458.4651
+
+ENERGY:      26      3382.3575      1163.9006       505.7944        66.4106           -660.9622      3638.0448         0.0000         0.0000         0.0000           8095.5458         0.0000      8095.5458      8095.5458         0.0000           4792.2090      5135.9631    216000.0000      4792.2090      5135.9631
+
+ENERGY:      27      3316.0921      1164.0128       504.8985        61.2134           -660.0713      3533.9666         0.0000         0.0000         0.0000           7920.1121         0.0000      7920.1121      7920.1121         0.0000           4680.8103      5008.3206    216000.0000      4680.8103      5008.3206
+
+ENERGY:      28      3260.8445      1170.7026       503.8208        57.6534           -659.4234      3521.5779         0.0000         0.0000         0.0000           7855.1758         0.0000      7855.1758      7855.1758         0.0000           4683.5255      5018.1769    216000.0000      4683.5255      5018.1769
+
+ENERGY:      29      3215.8613      1183.5312       502.7446        55.9044           -658.9535      3597.1599         0.0000         0.0000         0.0000           7896.2480         0.0000      7896.2480      7896.2480         0.0000           4795.4695      5169.8073    216000.0000      4795.4695      5169.8073
+
+LINE MINIMIZER BRACKET: DX 2.45006e-05 2.45006e-05 DU -64.9363 41.0722 DUDX -4.74353e+06 -505460 4.09489e+06 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      30      3255.1220      1171.8919       503.6908        57.3557           -659.3609      3525.6253         0.0000         0.0000         0.0000           7854.3248         0.0000      7854.3248      7854.3248         0.0000           4690.6395      5027.9423    216000.0000      4690.6395      5027.9423
+
+LINE MINIMIZER BRACKET: DX 2.83799e-06 2.16626e-05 DU -0.850994 41.9232 DUDX -505460 -9729.19 4.09489e+06 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 1.35514e+07 TO 13551.4
+ENERGY:      31      2999.9649      1142.7704       503.3703        49.8031           -661.3939      3236.5462         0.0000         0.0000         0.0000           7271.0611         0.0000      7271.0611      7271.0611         0.0000           4390.0742      4711.2088    216000.0000      4390.0742      4711.2088
+
+ENERGY:      32      2765.2740      1119.7078       503.0710        43.7319           -663.4436      3092.5343         0.0000         0.0000         0.0000           6860.8754         0.0000      6860.8754      6860.8754         0.0000           4270.9404      4591.3767    216000.0000      4270.9404      4591.3767
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 6.87618e+06 TO 6876.18
+ENERGY:      33      2289.1596      1082.4537       501.1204        34.2619           -664.2706      2830.9411         0.0000         0.0000         0.0000           6073.6659         0.0000      6073.6659      6073.6659         0.0000           4078.5070      4367.1167    216000.0000      4078.5070      4367.1167
+
+ENERGY:      34      1884.7267      1065.0767       500.1138        28.4027           -664.9887      2616.4348         0.0000         0.0000         0.0000           5429.7661         0.0000      5429.7661      5429.7661         0.0000           3925.2716      4182.7263    216000.0000      3925.2716      4182.7263
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 4.11393e+06 TO 4113.93
+ENERGY:      35      1556.9185      1054.7701       501.0592        24.8843           -666.8746      2310.1204         0.0000         0.0000         0.0000           4780.8779         0.0000      4780.8779      4780.8779         0.0000           3609.5534      3840.4263    216000.0000      3609.5534      3840.4263
+
+ENERGY:      36      1281.6622      1061.9064       502.7804        22.4548           -668.6790      2063.1441         0.0000         0.0000         0.0000           4263.2688         0.0000      4263.2688      4263.2688         0.0000           3353.6485      3561.1696    216000.0000      3353.6485      3561.1696
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 2.3215e+06 TO 2321.5
+ENERGY:      37      1029.1571      1045.2245       502.9941        21.6954           -668.8005      1900.7311         0.0000         0.0000         0.0000           3831.0017         0.0000      3831.0017      3831.0017         0.0000           3212.1532      3389.1076    216000.0000      3212.1532      3389.1076
+
+ENERGY:      38       820.1601      1045.4285       503.9711        22.1273           -668.8343      1779.6660         0.0000         0.0000         0.0000           3502.5188         0.0000      3502.5188      3502.5188         0.0000           3109.7828      3261.7088    216000.0000      3109.7828      3261.7088
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 1.55283e+06 TO 1552.83
+ENERGY:      39       726.2315      1035.7608       508.0330        21.6628           -671.1528      1573.5858         0.0000         0.0000         0.0000           3194.1210         0.0000      3194.1210      3194.1210         0.0000           2854.1814      2987.4387    216000.0000      2854.1814      2987.4387
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      40       654.1764      1036.3491       512.3367        22.0146           -673.4388      1460.6248         0.0000         0.0000         0.0000           3012.0629         0.0000      3012.0629      3012.0629         0.0000           2710.8152      2832.7873    216000.0000      2710.8152      2832.7873
+
+ENERGY:      41       604.1338      1047.2041       516.9065        23.2990           -675.7137      1430.4906         0.0000         0.0000         0.0000           2946.3203         0.0000      2946.3203      2946.3203         0.0000           2666.1858      2784.0475    216000.0000      2666.1858      2784.0475
+
+ENERGY:      42       576.1025      1068.2552       521.7890        25.7039           -677.9997      1518.0958         0.0000         0.0000         0.0000           3031.9467         0.0000      3031.9467      3031.9467         0.0000           2765.2090      2893.1733    216000.0000      2765.2090      2893.1733
+
+LINE MINIMIZER BRACKET: DX 0.000264911 0.000264911 DU -65.7427 85.6264 DUDX -468760 2447.01 721910 
+ENERGY:      43       608.1609      1045.5410       516.4334        23.1236           -675.4821      1429.2952         0.0000         0.0000         0.0000           2947.0720         0.0000      2947.0720      2947.0720         0.0000           2665.5931      2783.4466    216000.0000      2665.5931      2783.4466
+
+LINE MINIMIZER BRACKET: DX 2.64911e-05 0.000264911 DU -0.751748 85.6264 DUDX -51617 2447.01 721910 
+ENERGY:      44       604.5384      1046.9299       516.8566        23.2806           -675.6871      1430.3729         0.0000         0.0000         0.0000           2946.2914         0.0000      2946.2914      2946.2914         0.0000           2666.1369      2784.0202    216000.0000      2666.1369      2784.0202
+
+LINE MINIMIZER BRACKET: DX 2.3842e-05 2.64911e-06 DU -0.780621 0.0288727 DUDX -51617 -3425.67 2447.01 
+ENERGY:      45       604.4915      1046.9490       516.8623        23.2828           -675.6898      1430.3932         0.0000         0.0000         0.0000           2946.2888         0.0000      2946.2888      2946.2888         0.0000           2666.1513      2784.0357    216000.0000      2666.1513      2784.0357
+
+LINE MINIMIZER BRACKET: DX 3.16761e-07 2.33235e-06 DU -0.00259323 0.0314659 DUDX -3425.67 -2773.56 2447.01 
+ENERGY:      46       604.4570      1046.9630       516.8664        23.2843           -675.6918      1430.4082         0.0000         0.0000         0.0000           2946.2871         0.0000      2946.2871      2946.2871         0.0000           2666.1621      2784.0472    216000.0000      2666.1621      2784.0472
+
+LINE MINIMIZER BRACKET: DX 2.33235e-07 2.09912e-06 DU -0.00174479 0.0332107 DUDX -2773.56 -2293.19 2447.01 
+ENERGY:      47       604.4259      1046.9756       516.8701        23.2858           -675.6937      1430.4218         0.0000         0.0000         0.0000           2946.2855         0.0000      2946.2855      2946.2855         0.0000           2666.1719      2784.0578    216000.0000      2666.1719      2784.0578
+
+LINE MINIMIZER BRACKET: DX 2.09912e-07 1.88921e-06 DU -0.00152724 0.0347379 DUDX -2293.19 -1860.7 2447.01 
+ENERGY:      48       604.3980      1046.9869       516.8735        23.2870           -675.6953      1430.4341         0.0000         0.0000         0.0000           2946.2843         0.0000      2946.2843      2946.2843         0.0000           2666.1807      2784.0673    216000.0000      2666.1807      2784.0673
+
+LINE MINIMIZER BRACKET: DX 1.88921e-07 1.70029e-06 DU -0.00126277 0.0360007 DUDX -1860.7 -1471.33 2447.01 
+LINE MINIMIZER REDUCING GRADIENT FROM 3.40316e+06 TO 3403.16
+ENERGY:      49       532.5257      1042.8768       518.6584        24.2807           -674.5636      1249.9117         0.0000         0.0000         0.0000           2693.6897         0.0000      2693.6897      2693.6897         0.0000           2438.6843      2544.4155    216000.0000      2438.6843      2544.4155
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      50       471.0601      1043.5942       520.6477        25.6321           -673.5079      1146.8983         0.0000         0.0000         0.0000           2534.3245         0.0000      2534.3245      2534.3245         0.0000           2307.5769      2408.2173    216000.0000      2307.5769      2408.2173
+
+ENERGY:      51       419.9687      1049.0854       522.8161        27.3090           -672.5093      1076.5603         0.0000         0.0000         0.0000           2423.2303         0.0000      2423.2303      2423.2303         0.0000           2214.8061      2312.0134    216000.0000      2214.8061      2312.0134
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 737781 TO 737.781
+ENERGY:      52       340.4728      1015.0211       522.5311        28.2591           -676.1970      1019.9174         0.0000         0.0000         0.0000           2250.0045         0.0000      2250.0045      2250.0045         0.0000           2176.7514      2242.4889    216000.0000      2176.7514      2242.4889
+
+ENERGY:      53       308.4324       995.5199       522.7275        31.0008           -679.8981      1003.1126         0.0000         0.0000         0.0000           2180.8950         0.0000      2180.8950      2180.8950         0.0000           2175.8992      2221.6922    216000.0000      2175.8992      2221.6922
+
+ENERGY:      54       320.1731       992.3892       523.1336        35.4802           -683.6032      1033.5529         0.0000         0.0000         0.0000           2221.1259         0.0000      2221.1259      2221.1259         0.0000           2222.2473      2256.1332    216000.0000      2222.2473      2256.1332
+
+LINE MINIMIZER BRACKET: DX 0.000306495 0.000306495 DU -69.1095 40.2309 DUDX -394870 -52844.3 326182 
+ENERGY:      55       307.5295       994.0450       522.7741        31.5377           -680.4279      1004.2432         0.0000         0.0000         0.0000           2179.7016         0.0000      2179.7016      2179.7016         0.0000           2179.2067      2222.8557    216000.0000      2179.2067      2222.8557
+
+LINE MINIMIZER BRACKET: DX 4.39871e-05 0.000262508 DU -1.19335 41.4243 DUDX -52844.3 -1868.97 326182 
+ENERGY:      56       307.4169       993.3091       522.8034        31.8753           -680.7453      1005.3893         0.0000         0.0000         0.0000           2180.0486         0.0000      2180.0486      2180.0486         0.0000           2181.6526      2224.0940    216000.0000      2181.6526      2224.0940
+
+LINE MINIMIZER BRACKET: DX 4.39871e-05 2.62508e-05 DU -1.19335 0.347009 DUDX -52844.3 -1868.97 28980.7 
+ENERGY:      57       307.5040       993.9661       522.7770        31.5709           -680.4597      1004.3421         0.0000         0.0000         0.0000           2179.7003         0.0000      2179.7003      2179.7003         0.0000           2179.4349      2222.9607    216000.0000      2179.4349      2222.9607
+
+LINE MINIMIZER BRACKET: DX 2.62508e-06 2.36257e-05 DU -0.00126376 0.348273 DUDX -1868.97 1201.32 28980.7 
+LINE MINIMIZER REDUCING GRADIENT FROM 748602 TO 748.602
+ENERGY:      58       270.2977       936.6182       525.0628        30.9538           -683.5336       889.9223         0.0000         0.0000         0.0000           1969.3213         0.0000      1969.3213      1969.3213         0.0000           2033.9526      2070.0286    216000.0000      2033.9526      2070.0286
+
+ENERGY:      59       246.7946       893.6146       528.0187        31.2883           -686.4992       799.6651         0.0000         0.0000         0.0000           1812.8821         0.0000      1812.8821      1812.8821         0.0000           1912.3174      1943.5731    216000.0000      1912.3174      1943.5731
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 305557 TO 305.557
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      60       222.1375       859.0104       529.1903        27.8512           -687.7588       744.7163         0.0000         0.0000         0.0000           1695.1468         0.0000      1695.1468      1695.1468         0.0000           1815.5770      1866.4705    216000.0000      1815.5770      1866.4705
+
+ENERGY:      61       232.5597       839.8973       530.8209        26.7419           -688.9635       718.9175         0.0000         0.0000         0.0000           1659.9738         0.0000      1659.9738      1659.9738         0.0000           1744.8837      1819.6070    216000.0000      1744.8837      1819.6070
+
+ENERGY:      62       276.9364       836.4432       533.3357        29.1049           -690.1205       722.2322         0.0000         0.0000         0.0000           1707.9319         0.0000      1707.9319      1707.9319         0.0000           1700.2602      1809.8129    216000.0000      1700.2602      1809.8129
+
+LINE MINIMIZER BRACKET: DX 0.000523512 0.000523512 DU -35.173 47.9581 DUDX -145243 12886.1 178159 
+ENERGY:      63       229.9612       841.1185       530.6229        26.7234           -688.8500       720.1645         0.0000         0.0000         0.0000           1659.7405         0.0000      1659.7405      1659.7405         0.0000           1750.7495      1822.5539    216000.0000      1750.7495      1822.5539
+
+LINE MINIMIZER BRACKET: DX 0.000471161 5.23512e-05 DU -35.4063 0.233312 DUDX -145243 -3362.86 12886.1 
+ENERGY:      64       230.4891       840.8452       530.6644        26.7249           -688.8754       719.8584         0.0000         0.0000         0.0000           1659.7066         0.0000      1659.7066      1659.7066         0.0000           1749.4485      1821.8411    216000.0000      1749.4485      1821.8411
+
+LINE MINIMIZER BRACKET: DX 1.1257e-05 4.10942e-05 DU -0.0339279 0.26724 DUDX -3362.86 68.1064 12886.1 
+LINE MINIMIZER REDUCING GRADIENT FROM 417452 TO 417.452
+ENERGY:      65       189.0670       793.8165       532.8777        26.1620           -691.7758       664.4159         0.0000         0.0000         0.0000           1514.5633         0.0000      1514.5633      1514.5633         0.0000           1668.0271      1747.9181    216000.0000      1668.0271      1747.9181
+
+ENERGY:      66       171.3856       758.2165       535.4201        26.0337           -694.4712       618.0618         0.0000         0.0000         0.0000           1414.6464         0.0000      1414.6464      1414.6464         0.0000           1589.9530      1677.7713    216000.0000      1589.9530      1677.7713
+
+ENERGY:      67       177.4132       733.7408       538.2396        26.3890           -696.9595       579.7636         0.0000         0.0000         0.0000           1358.5866         0.0000      1358.5866      1358.5866         0.0000           1513.8792      1609.9752    216000.0000      1513.8792      1609.9752
+
+ENERGY:      68       206.7980       720.0777       541.3223        27.2711           -699.2399       548.6757         0.0000         0.0000         0.0000           1344.9048         0.0000      1344.9048      1344.9048         0.0000           1438.7285      1543.3143    216000.0000      1438.7285      1543.3143
+
+ENERGY:      69       258.7531       716.8540       544.6791        28.7187           -701.3138       524.1929         0.0000         0.0000         0.0000           1371.8839         0.0000      1371.8839      1371.8839         0.0000           1363.7820      1476.8300    216000.0000      1363.7820      1476.8300
+
+LINE MINIMIZER BRACKET: DX 0.000402916 0.000402916 DU -13.6818 26.9791 DUDX -82182.7 23323.2 124592 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      70       198.9288       722.0658       540.6626        27.0478           -698.7933       554.2487         0.0000         0.0000         0.0000           1344.1603         0.0000      1344.1603      1344.1603         0.0000           1453.7233      1556.3558    216000.0000      1453.7233      1556.3558
+
+LINE MINIMIZER BRACKET: DX 0.000320886 8.20292e-05 DU -14.4263 0.744511 DUDX -82182.7 1980.55 23323.2 
+ENERGY:      71       196.1163       722.9409       540.4114        26.9664           -698.6160       556.5800         0.0000         0.0000         0.0000           1344.3989         0.0000      1344.3989      1344.3989         0.0000           1459.6915      1561.6407    216000.0000      1459.6915      1561.6407
+
+LINE MINIMIZER BRACKET: DX 3.20886e-05 8.20292e-05 DU -0.238624 0.744511 DUDX -6352.89 1980.55 23323.2 
+ENERGY:      72       198.6261       722.1549       540.6361        27.0390           -698.7748       554.4915         0.0000         0.0000         0.0000           1344.1728         0.0000      1344.1728      1344.1728         0.0000           1454.3497      1556.9096    216000.0000      1454.3497      1556.9096
+
+LINE MINIMIZER BRACKET: DX 3.37441e-06 8.20292e-05 DU -0.0124398 0.744511 DUDX 1104.8 1980.55 23323.2 
+ENERGY:      73       198.9287       722.0660       540.6626        27.0478           -698.7933       554.2480         0.0000         0.0000         0.0000           1344.1597         0.0000      1344.1597      1344.1597         0.0000           1453.7222      1556.3539    216000.0000      1453.7222      1556.3539
+
+LINE MINIMIZER REDUCING GRADIENT FROM 712129 TO 712.129
+ENERGY:      74       154.0663       681.2777       542.9612        29.5153           -700.5644       470.0122         0.0000         0.0000         0.0000           1177.2684         0.0000      1177.2684      1177.2684         0.0000           1332.5763      1411.8607    216000.0000      1332.5763      1411.8607
+
+ENERGY:      75       127.1132       651.8773       545.5272        33.2069           -702.1094       404.4548         0.0000         0.0000         0.0000           1060.0700         0.0000      1060.0700      1060.0700         0.0000           1227.9878      1292.3553    216000.0000      1227.9878      1292.3553
+
+ENERGY:      76       118.7640       633.9959       548.3270        37.9128           -703.4458       353.6349         0.0000         0.0000         0.0000            989.1889         0.0000       989.1889       989.1889         0.0000           1134.7635      1189.6021    216000.0000      1134.7635      1189.6021
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 147688 TO 147.688
+ENERGY:      77       124.7094       586.2494       543.4156        30.0160           -705.0826       332.4932         0.0000         0.0000         0.0000            911.8010         0.0000       911.8010       911.8010         0.0000           1149.2140      1191.2354    216000.0000      1149.2140      1191.2354
+
+ENERGY:      78       206.9120       570.1843       539.8123        30.4115           -706.6685       328.0789         0.0000         0.0000         0.0000            968.7305         0.0000       968.7305       968.7305         0.0000           1156.4277      1182.1638    216000.0000      1156.4277      1182.1638
+
+LINE MINIMIZER BRACKET: DX 0.000982899 0.000982899 DU -77.3878 56.9294 DUDX -147688 -10291.7 125254 
+ENERGY:      79       129.4787       583.3133       543.0014        29.6276           -705.2416       331.3293         0.0000         0.0000         0.0000            911.5087         0.0000       911.5087       911.5087         0.0000           1150.2950      1190.8113    216000.0000      1150.2950      1190.8113
+
+LINE MINIMIZER BRACKET: DX 9.82899e-05 0.000884609 DU -0.29239 57.2218 DUDX -10291.7 3248.25 125254 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      80       128.1579       584.0699       543.1104        29.7204           -705.1997       331.6098         0.0000         0.0000         0.0000            911.4687         0.0000       911.4687       911.4687         0.0000           1150.0083      1194.2261    216000.0000      1150.0083      1194.2261
+
+LINE MINIMIZER BRACKET: DX 7.26375e-05 2.56523e-05 DU -0.332339 0.0399495 DUDX -10291.7 -302.85 3248.25 
+ENERGY:      81       128.2877       583.9933       543.0994        29.7108           -705.2039       331.5812         0.0000         0.0000         0.0000            911.4686         0.0000       911.4686       911.4686         0.0000           1150.0372      1194.2153    216000.0000      1150.0372      1194.2153
+
+LINE MINIMIZER BRACKET: DX 2.56523e-06 2.30871e-05 DU -0.000104664 0.0400541 DUDX -302.85 52.3021 3248.25 
+LINE MINIMIZER REDUCING GRADIENT FROM 117133 TO 117.133
+ENERGY:      82       124.1320       547.3771       536.9352        27.6398           -705.2049       311.7433         0.0000         0.0000         0.0000            842.6224         0.0000       842.6224       842.6224         0.0000           1138.3615      1169.8905    216000.0000      1138.3615      1169.8905
+
+ENERGY:      83       164.1807       532.2482       531.5796        28.0642           -705.1757       303.4295         0.0000         0.0000         0.0000            854.3266         0.0000       854.3266       854.3266         0.0000           1124.3721      1144.2655    216000.0000      1124.3721      1144.2655
+
+LINE MINIMIZER BRACKET: DX 0.000937441 0.000937441 DU -68.8462 11.7041 DUDX -117133 -30513.8 53473.7 
+ENERGY:      84       133.2975       539.6107       534.9196        27.5270           -705.1948       307.5226         0.0000         0.0000         0.0000            837.6826         0.0000       837.6826       837.6826         0.0000           1133.7233      1161.0550    216000.0000      1133.7233      1161.0550
+
+LINE MINIMIZER BRACKET: DX 0.000332622 0.000604818 DU -4.93979 16.6439 DUDX -30513.8 -510.979 53473.7 
+ENERGY:      85       135.5612       538.4768       534.5638        27.5385           -705.1932       306.9087         0.0000         0.0000         0.0000            837.8558         0.0000       837.8558       837.8558         0.0000           1132.8460      1159.4252    216000.0000      1132.8460      1159.4252
+
+LINE MINIMIZER BRACKET: DX 0.000332622 6.04818e-05 DU -4.93979 0.17316 DUDX -30513.8 -510.979 4926.82 
+ENERGY:      86       133.5156       539.4936       534.8839        27.5277           -705.1946       307.4590         0.0000         0.0000         0.0000            837.6852         0.0000       837.6852       837.6852         0.0000           1133.6360      1160.8923    216000.0000      1133.6360      1160.8923
+
+LINE MINIMIZER BRACKET: DX 0.000332622 6.04818e-06 DU -4.93979 0.00253018 DUDX -30513.8 -510.979 32.8648 
+LINE MINIMIZER REDUCING GRADIENT FROM 153654 TO 153.654
+ENERGY:      87       105.7146       512.8138       529.5234        25.0842           -704.8244       291.7380         0.0000         0.0000         0.0000            760.0496         0.0000       760.0496       760.0496         0.0000           1095.7099      1122.5426    216000.0000      1095.7099      1122.5426
+
+ENERGY:      88       102.2324       502.1738       525.5600        23.5410           -704.3621       284.0997         0.0000         0.0000         0.0000            733.2449         0.0000       733.2449       733.2449         0.0000           1056.0000      1085.0010    216000.0000      1056.0000      1085.0010
+
+ENERGY:      89       123.7353       507.5285       523.2445        22.8970           -703.8196       284.5271         0.0000         0.0000         0.0000            758.1127         0.0000       758.1127       758.1127         0.0000           1014.4254      1047.4376    216000.0000      1014.4254      1047.4376
+
+LINE MINIMIZER BRACKET: DX 0.00066946 0.00066946 DU -26.8047 24.8678 DUDX -78785.6 -2406.91 76171.3 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:      90       103.2332       501.9673       525.2567        23.4408           -704.3135       283.6675         0.0000         0.0000         0.0000            733.2520         0.0000       733.2520       733.2520         0.0000           1051.7853      1081.0568    216000.0000      1051.7853      1081.0568
+
+LINE MINIMIZER BRACKET: DX 0.00066946 6.6946e-05 DU -26.8047 0.0070844 DUDX -78785.6 -2406.91 5159.77 
+LINE MINIMIZER REDUCING GRADIENT FROM 177489 TO 177.489
+ENERGY:      91        82.5858       471.8045       521.7759        18.7590           -705.0663       260.1824         0.0000         0.0000         0.0000            650.0414         0.0000       650.0414       650.0414         0.0000            985.8813      1021.2334    216000.0000       985.8813      1021.2334
+
+ENERGY:      92        99.0149       461.6948       520.7914        16.0469           -705.5627       245.5868         0.0000         0.0000         0.0000            637.5722         0.0000       637.5722       637.5722         0.0000            913.4493       955.1377    216000.0000       913.4493       955.1377
+
+ENERGY:      93       153.9402       472.6419       522.2485        15.3981           -705.8484       239.5553         0.0000         0.0000         0.0000            697.9357         0.0000       697.9357       697.9357         0.0000            833.8681       882.0426    216000.0000       833.8681       882.0426
+
+LINE MINIMIZER BRACKET: DX 0.000664289 0.000664289 DU -12.4692 60.3635 DUDX -72327.4 36216.1 148057 
+ENERGY:      94        89.4050       462.8057       520.8416        16.7284           -705.4456       249.4249         0.0000         0.0000         0.0000            633.7599         0.0000       633.7599       633.7599         0.0000            938.0211       977.5698    216000.0000       938.0211       977.5698
+
+LINE MINIMIZER BRACKET: DX 0.000445528 0.000218761 DU -16.2814 3.81224 DUDX -72327.4 -76.2019 36216.1 
+LINE MINIMIZER REDUCING GRADIENT FROM 160889 TO 160.889
+ENERGY:      95        80.9793       435.4580       520.0134        16.0534           -706.7460       200.6136         0.0000         0.0000         0.0000            546.3718         0.0000       546.3718       546.3718         0.0000            856.8800       892.5303    216000.0000       856.8800       892.5303
+
+ENERGY:      96        89.0215       426.8627       520.2179        16.4696           -707.7813       161.0618         0.0000         0.0000         0.0000            505.8522         0.0000       505.8522       505.8522         0.0000            777.0022       808.3168    216000.0000       777.0022       808.3168
+
+ENERGY:      97       113.4668       436.8875       521.4598        18.0834           -708.5890       129.6753         0.0000         0.0000         0.0000            510.9837         0.0000       510.9837       510.9837         0.0000            696.9496       723.5529    216000.0000       696.9496       723.5529
+
+LINE MINIMIZER BRACKET: DX 0.000691834 0.000691834 DU -40.5196 5.13149 DUDX -92078.6 -25380.8 39612.8 
+ENERGY:      98        96.5315       428.5334       520.5779        16.9460           -708.1288       147.9932         0.0000         0.0000         0.0000            502.4532         0.0000       502.4532       502.4532         0.0000            746.0965       775.6230    216000.0000       746.0965       775.6230
+
+LINE MINIMIZER BRACKET: DX 0.000267688 0.000424146 DU -3.39903 8.53052 DUDX -25380.8 -116.73 39612.8 
+LINE MINIMIZER REDUCING GRADIENT FROM 125155 TO 125.155
+ENERGY:      99        73.7923       422.5367       518.4325        16.7561           -708.0622       108.7760         0.0000         0.0000         0.0000            432.2312         0.0000       432.2312       432.2312         0.0000            645.6573       673.7122    216000.0000       645.6573       673.7122
+
+LDB: ============= START OF LOAD BALANCING ============== 0.97462
+LDB: 231 computes have load of zero
+LDB: Largest compute 31 load 0.071774 is 128.5% of average load 0.055857
+LDB: Average compute 0.002381 is 4.3% of average load 0.055857
+LDB: Partitioning computes with target load 0.005586
+LDB: Increased migratable compute count from 111 to 134
+LDB: Largest unpartitionable compute is 0.019937
+LDB: ============== END OF LOAD BALANCING =============== 0.976305
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 0.979631
+Info: Initial time: 40 CPUs 0.00355071 s/step 0.0205481 days/ns 2728.52 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:     100        73.7923       422.5367       518.4325        16.7561           -708.0622       108.7760         0.0000         0.0000         0.0000            432.2312         0.0000       432.2312       432.2312         0.0000            645.6573       670.7930    216000.0000       645.6573       670.7930
+
+REINITIALIZING VELOCITIES AT STEP 100 TO 298 KELVIN.
+TCL: Setting parameter firstTimeStep to 0
+TCL: Running for 500 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0        73.7923       422.5367       518.4325        16.7561           -708.0622       108.7760         0.0000         0.0000       632.9387           1065.1699       296.4255       432.2312      1060.3053       296.4255            742.3510       745.8077    216000.0000       742.3510       745.8077
+
+LDB: ============= START OF LOAD BALANCING ============== 1.03537
+LDB: ============== END OF LOAD BALANCING =============== 1.03601
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1.03726
+LDB: ============= START OF LOAD BALANCING ============== 1.20877
+LDB: 222 computes have load of zero
+LDB: Largest compute 409 load 0.018370 is 55.4% of average load 0.033146
+LDB: Average compute 0.001822 is 5.5% of average load 0.033146
+LDB: TIME 1.2097 LOAD: AVG 0.0331464 MAX 0.171009  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 1.21034 LOAD: AVG 0.0331464 MAX 0.0787773  PROXIES: TOTAL 184 MAXPE 10 MAXPATCH 12 TorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 1.21156
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1.21463
+Info: Initial time: 40 CPUs 0.00227266 s/step 0.013152 days/ns 2728.52 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 1.34654
+LDB: 222 computes have load of zero
+LDB: Largest compute 400 load 0.019161 is 46.3% of average load 0.041425
+LDB: Average compute 0.001997 is 4.8% of average load 0.041425
+LDB: TIME 1.34778 LOAD: AVG 0.0414254 MAX 0.100893  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 1.34842 LOAD: AVG 0.0414254 MAX 0.100893  PROXIES: TOTAL 184 MAXPE 10 MAXPATCH 12 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 1.34886 LOAD: AVG 0.0414254 MAX 0.100893  PROXIES: TOTAL 184 MAXPE 10 MAXPATCH 12 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 1.35
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1.35308
+Info: Initial time: 40 CPUs 0.00129303 s/step 0.0074828 days/ns 2728.52 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 1.49718
+LDB: 222 computes have load of zero
+LDB: Largest compute 400 load 0.018542 is 43.2% of average load 0.042874
+LDB: Average compute 0.002260 is 5.3% of average load 0.042874
+LDB: TIME 1.49828 LOAD: AVG 0.0428736 MAX 0.0982409  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 1.4989 LOAD: AVG 0.0428736 MAX 0.0982409  PROXIES: TOTAL 184 MAXPE 10 MAXPATCH 12 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 1.4994 LOAD: AVG 0.0428736 MAX 0.0982409  PROXIES: TOTAL 187 MAXPE 10 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 1.50058
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1.50936
+Info: Benchmark time: 40 CPUs 0.00143367 s/step 0.0082967 days/ns 2728.52 MB memory
+Info: Benchmark time: 40 CPUs 0.00133225 s/step 0.00770978 days/ns 2728.52 MB memory
+Info: Benchmark time: 40 CPUs 0.001256 s/step 0.00726852 days/ns 2728.52 MB memory
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+Info: Benchmark time: 40 CPUs 0.00133431 s/step 0.0077217 days/ns 2728.52 MB memory
+Info: Benchmark time: 40 CPUs 0.00125091 s/step 0.00723907 days/ns 2728.52 MB memory
+Info: Benchmark time: 40 CPUs 0.00124236 s/step 0.00718959 days/ns 2728.52 MB memory
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 6.79562
+LDB: ============== END OF LOAD BALANCING =============== 6.79628
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 6.79795
+LDB: ============= START OF LOAD BALANCING ============== 6.93222
+LDB: 212 computes have load of zero
+LDB: Largest compute 409 load 0.034425 is 79.0% of average load 0.043557
+LDB: Average compute 0.002270 is 5.2% of average load 0.043557
+LDB: TIME 6.93326 LOAD: AVG 0.0435567 MAX 0.104453  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 6.93383 LOAD: AVG 0.0435567 MAX 0.104453  PROXIES: TOTAL 187 MAXPE 10 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 6.93424 LOAD: AVG 0.0435567 MAX 0.0918832  PROXIES: TOTAL 188 MAXPE 11 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 6.93544
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 6.93857
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:    5000       151.9752       507.5648       478.1046        31.6643          -1121.8251      -104.9819         0.0000         0.0000       622.3572            564.8591       291.4699       -57.4980       573.3159       302.6784             19.8057        19.2969    216000.0000        -7.8042        -7.8114
+
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 5000
+The last position output (seq=5000) takes 0.041 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 12.4525
+LDB: ============== END OF LOAD BALANCING =============== 12.4532
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 12.4567
+LDB: ============= START OF LOAD BALANCING ============== 12.5987
+LDB: 223 computes have load of zero
+LDB: Largest compute 75 load 0.022530 is 49.9% of average load 0.045169
+LDB: Average compute 0.002323 is 5.1% of average load 0.045169
+LDB: TIME 12.5998 LOAD: AVG 0.0451686 MAX 0.0965853  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 12.6005 LOAD: AVG 0.0451686 MAX 0.0965853  PROXIES: TOTAL 188 MAXPE 11 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 12.6012 LOAD: AVG 0.0451686 MAX 0.0965853  PROXIES: TOTAL 188 MAXPE 10 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 12.6025
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 12.6054
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   10000       182.3813       516.6624       489.7198        33.1773          -1132.2804       -98.7244         0.0000         0.0000       632.1123            623.0483       296.0385        -9.0640       630.4567       299.7204             -6.5013        -7.6185    216000.0000        -1.8464        -1.8373
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 10000
+The last position output (seq=10000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 17.3651
+LDB: ============== END OF LOAD BALANCING =============== 17.3659
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 17.3676
+LDB: ============= START OF LOAD BALANCING ============== 17.4917
+LDB: 223 computes have load of zero
+LDB: Largest compute 75 load 0.024843 is 55.0% of average load 0.045158
+LDB: Average compute 0.002607 is 5.8% of average load 0.045158
+LDB: TIME 17.4929 LOAD: AVG 0.0451585 MAX 0.0952115  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 17.4936 LOAD: AVG 0.0451585 MAX 0.0952115  PROXIES: TOTAL 188 MAXPE 10 MAXPATCH 14 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 17.4943 LOAD: AVG 0.0451585 MAX 0.0644543  PROXIES: TOTAL 189 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 17.4957
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 17.499
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   15000       161.1154       512.4967       483.2863        35.9261          -1146.0272      -118.8912         0.0000         0.0000       680.7777            608.6839       318.8301       -72.0938       617.0490       304.2019             18.7791        21.2773    216000.0000         1.2646         1.2659
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 15000
+The last position output (seq=15000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 22.3828
+LDB: ============== END OF LOAD BALANCING =============== 22.3835
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 22.385
+LDB: ============= START OF LOAD BALANCING ============== 22.511
+LDB: 223 computes have load of zero
+LDB: Largest compute 75 load 0.020814 is 46.8% of average load 0.044519
+LDB: Average compute 0.002602 is 5.8% of average load 0.044519
+LDB: TIME 22.5122 LOAD: AVG 0.0445188 MAX 0.0838616  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 22.5128 LOAD: AVG 0.0445188 MAX 0.0838616  PROXIES: TOTAL 189 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 22.5133 LOAD: AVG 0.0445188 MAX 0.0830615  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 22.5145
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 22.5194
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   20000       153.2302       508.9587       473.0418        32.7640          -1167.2563      -105.1527         0.0000         0.0000       624.1161            519.7018       292.2936      -104.4142       525.9838       292.2414            201.9302       203.5801    216000.0000        -0.9472        -0.9431
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 20000
+The last position output (seq=20000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 27.7308
+LDB: ============== END OF LOAD BALANCING =============== 27.7317
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 27.7334
+LDB: ============= START OF LOAD BALANCING ============== 27.8703
+LDB: 231 computes have load of zero
+LDB: Largest compute 400 load 0.018381 is 41.3% of average load 0.044477
+LDB: Average compute 0.002471 is 5.6% of average load 0.044477
+LDB: TIME 27.8715 LOAD: AVG 0.0444768 MAX 0.0972612  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 27.8722 LOAD: AVG 0.0444768 MAX 0.0972612  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 27.8727 LOAD: AVG 0.0444768 MAX 0.0972612  PROXIES: TOTAL 189 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 27.8742
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 27.8773
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 33.2543
+LDB: ============== END OF LOAD BALANCING =============== 33.255
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 33.2564
+LDB: ============= START OF LOAD BALANCING ============== 33.4058
+LDB: 222 computes have load of zero
+LDB: Largest compute 90 load 0.022033 is 50.9% of average load 0.043252
+LDB: Average compute 0.002284 is 5.3% of average load 0.043252
+LDB: TIME 33.4069 LOAD: AVG 0.0432517 MAX 0.100146  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 33.4076 LOAD: AVG 0.0432517 MAX 0.100146  PROXIES: TOTAL 189 MAXPE 10 MAXPATCH 15 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 33.4083 LOAD: AVG 0.0432517 MAX 0.100146  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 33.4097
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 33.4128
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   25000       149.8999       528.6847       499.8575        35.6950          -1155.6846      -134.5284         0.0000         0.0000       638.6431            562.5670       299.0971       -76.0760       570.9269       293.3222            -20.0627       -20.6027    216000.0000         1.4085         1.4109
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 25000
+The last position output (seq=25000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 38.895
+LDB: ============== END OF LOAD BALANCING =============== 38.8958
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 38.8974
+LDB: ============= START OF LOAD BALANCING ============== 39.0271
+LDB: 222 computes have load of zero
+LDB: Largest compute 409 load 0.017891 is 38.9% of average load 0.046033
+LDB: Average compute 0.002426 is 5.3% of average load 0.046033
+LDB: TIME 39.0281 LOAD: AVG 0.0460334 MAX 0.084511  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 39.0288 LOAD: AVG 0.0460334 MAX 0.084511  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 39.0295 LOAD: AVG 0.0460334 MAX 0.0838344  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 39.0308
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 39.0338
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   30000       176.4442       491.5007       487.5705        29.1958          -1156.5395      -123.9080         0.0000         0.0000       649.6780            553.9417       304.2651       -95.7363       561.1126       297.1824            -11.6926        -9.2376    216000.0000        -4.3198        -4.3025
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 30000
+The last position output (seq=30000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 44.2869
+LDB: ============== END OF LOAD BALANCING =============== 44.2878
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 44.2914
+LDB: ============= START OF LOAD BALANCING ============== 44.4275
+LDB: 231 computes have load of zero
+LDB: Largest compute 400 load 0.017814 is 41.1% of average load 0.043335
+LDB: Average compute 0.002380 is 5.5% of average load 0.043335
+LDB: TIME 44.4285 LOAD: AVG 0.0433347 MAX 0.103472  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 44.4291 LOAD: AVG 0.0433347 MAX 0.103472  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 44.4298 LOAD: AVG 0.0433347 MAX 0.103472  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 44.4311
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 44.4342
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   35000       169.6404       494.6809       484.7588        32.4587          -1157.1580      -123.8983         0.0000         0.0000       642.0786            542.5611       300.7060       -99.5175       551.5561       298.0015            -58.8399       -56.2686    216000.0000         5.2258         5.2269
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 35000
+The last position output (seq=35000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 49.8678
+LDB: ============== END OF LOAD BALANCING =============== 49.8685
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 49.87
+LDB: ============= START OF LOAD BALANCING ============== 50.0084
+LDB: 222 computes have load of zero
+LDB: Largest compute 400 load 0.017097 is 39.8% of average load 0.042927
+LDB: Average compute 0.002172 is 5.1% of average load 0.042927
+LDB: TIME 50.0095 LOAD: AVG 0.0429266 MAX 0.104256  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 50.01 LOAD: AVG 0.0429266 MAX 0.104256  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 50.0106 LOAD: AVG 0.0429266 MAX 0.104256  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 50.0119
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 50.0147
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   40000       166.4726       483.5443       492.0715        35.4814          -1157.5720       -94.7107         0.0000         0.0000       638.2602            563.5474       298.9178       -74.7129       570.2427       297.4053            119.0503       119.3629    216000.0000        -1.4450        -1.4444
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 40000
+The last position output (seq=40000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 55.745
+LDB: ============== END OF LOAD BALANCING =============== 55.7457
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 55.7472
+LDB: ============= START OF LOAD BALANCING ============== 55.9012
+LDB: 223 computes have load of zero
+LDB: Largest compute 400 load 0.026320 is 58.3% of average load 0.045131
+LDB: Average compute 0.002373 is 5.3% of average load 0.045131
+LDB: TIME 55.9023 LOAD: AVG 0.045131 MAX 0.110811  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 55.9029 LOAD: AVG 0.045131 MAX 0.110811  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 55.9033 LOAD: AVG 0.045131 MAX 0.110811  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 55.9047
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 55.9078
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 61.6571
+LDB: ============== END OF LOAD BALANCING =============== 61.6577
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 61.6591
+LDB: ============= START OF LOAD BALANCING ============== 61.8159
+LDB: 212 computes have load of zero
+LDB: Largest compute 400 load 0.020889 is 47.8% of average load 0.043723
+LDB: Average compute 0.002132 is 4.9% of average load 0.043723
+LDB: TIME 61.817 LOAD: AVG 0.0437225 MAX 0.11453  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 61.8176 LOAD: AVG 0.0437225 MAX 0.11453  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 61.8181 LOAD: AVG 0.0437225 MAX 0.11453  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 61.8194
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 61.8224
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   45000       173.0267       510.4093       488.9074        40.5796          -1189.2235      -121.5492         0.0000         0.0000       645.5682            547.7185       302.3403       -97.8497       555.7926       303.6951            -74.8074       -72.2616    216000.0000        -0.2749        -0.2789
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 45000
+The last position output (seq=45000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 67.6707
+LDB: ============== END OF LOAD BALANCING =============== 67.6715
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 67.673
+LDB: ============= START OF LOAD BALANCING ============== 67.8227
+LDB: 212 computes have load of zero
+LDB: Largest compute 400 load 0.022540 is 50.7% of average load 0.044441
+LDB: Average compute 0.002026 is 4.6% of average load 0.044441
+LDB: TIME 67.8238 LOAD: AVG 0.0444412 MAX 0.116739  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 67.8244 LOAD: AVG 0.0444412 MAX 0.116739  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 67.8251 LOAD: AVG 0.0444412 MAX 0.116739  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 67.8264
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 67.8295
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000       179.5679       529.1731       485.0669        32.5419          -1196.9568      -113.7649         0.0000         0.0000       633.2613            548.8893       296.5766       -84.3720       555.0562       295.1754             16.5363        18.0628    216000.0000        -5.5931        -5.5966
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 50000
+The last position output (seq=50000) takes 0.001 seconds, 2728.516 MB of memory in use
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 73.7946
+LDB: ============== END OF LOAD BALANCING =============== 73.7955
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 73.7991
+LDB: ============= START OF LOAD BALANCING ============== 73.9537
+LDB: 212 computes have load of zero
+LDB: Largest compute 400 load 0.023308 is 52.9% of average load 0.044093
+LDB: Average compute 0.002049 is 4.6% of average load 0.044093
+LDB: TIME 73.9547 LOAD: AVG 0.0440934 MAX 0.114871  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 73.9553 LOAD: AVG 0.0440934 MAX 0.114871  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 73.9558 LOAD: AVG 0.0440934 MAX 0.114871  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 73.957
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 73.9619
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   55000       177.0853       469.3195       490.8863        35.2481          -1166.8999      -115.0559         0.0000         0.0000       620.3992            510.9825       290.5529      -109.4167       517.1990       296.4606            -27.3079       -24.7479    216000.0000         0.7193         0.7224
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 55000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 79.7178
+LDB: ============== END OF LOAD BALANCING =============== 79.7185
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 79.7202
+LDB: ============= START OF LOAD BALANCING ============== 79.8689
+LDB: 223 computes have load of zero
+LDB: Largest compute 409 load 0.020872 is 47.8% of average load 0.043665
+LDB: Average compute 0.002302 is 5.3% of average load 0.043665
+LDB: TIME 79.8701 LOAD: AVG 0.0436652 MAX 0.112647  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 79.8708 LOAD: AVG 0.0436652 MAX 0.112647  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 79.8713 LOAD: AVG 0.0436652 MAX 0.112647  PROXIES: TOTAL 188 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 79.8728
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 79.8759
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   60000       183.9672       546.3050       479.7236        37.3093          -1179.2514      -134.7450         0.0000         0.0000       615.2650            548.5736       288.1484       -66.6914       556.0058       299.3431            -29.3922       -28.3598    216000.0000         2.3057         2.3073
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 60000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 85.3378
+LDB: ============== END OF LOAD BALANCING =============== 85.3386
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 85.3401
+LDB: ============= START OF LOAD BALANCING ============== 85.4824
+LDB: 212 computes have load of zero
+LDB: Largest compute 409 load 0.020826 is 46.8% of average load 0.044455
+LDB: Average compute 0.002079 is 4.7% of average load 0.044455
+LDB: TIME 85.4837 LOAD: AVG 0.0444552 MAX 0.105867  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 85.4843 LOAD: AVG 0.0444552 MAX 0.105867  PROXIES: TOTAL 188 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 85.485 LOAD: AVG 0.0444552 MAX 0.105867  PROXIES: TOTAL 192 MAXPE 10 MAXPATCH 18 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 85.4864
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 85.4894
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 91.1188
+LDB: ============== END OF LOAD BALANCING =============== 91.1195
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 91.1211
+LDB: ============= START OF LOAD BALANCING ============== 91.2654
+LDB: 222 computes have load of zero
+LDB: Largest compute 90 load 0.032569 is 72.8% of average load 0.044744
+LDB: Average compute 0.002485 is 5.6% of average load 0.044744
+LDB: TIME 91.2664 LOAD: AVG 0.0447435 MAX 0.0910795  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 91.2672 LOAD: AVG 0.0447435 MAX 0.0910795  PROXIES: TOTAL 192 MAXPE 10 MAXPATCH 18 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 91.2677 LOAD: AVG 0.0447435 MAX 0.0825508  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 91.269
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 91.2722
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   65000       173.8334       492.3922       491.3590        29.5800          -1191.4980      -116.3141         0.0000         0.0000       631.4416            510.7942       295.7244      -120.6474       520.4787       300.6797             46.6194        48.2985    216000.0000        -5.5893        -5.5860
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 65000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 96.4859
+LDB: ============== END OF LOAD BALANCING =============== 96.4865
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 96.4882
+LDB: ============= START OF LOAD BALANCING ============== 96.6236
+LDB: 222 computes have load of zero
+LDB: Largest compute 90 load 0.030699 is 68.4% of average load 0.044892
+LDB: Average compute 0.002329 is 5.2% of average load 0.044892
+LDB: TIME 96.6247 LOAD: AVG 0.0448924 MAX 0.0878477  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 96.6254 LOAD: AVG 0.0448924 MAX 0.0878477  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 96.6261 LOAD: AVG 0.0448924 MAX 0.0874991  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 96.6272
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 96.6304
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   70000       163.5493       499.5093       492.1878        33.2862          -1190.4144      -119.4111         0.0000         0.0000       636.8308            515.5379       298.2484      -121.2929       524.7362       291.4742            -44.2134       -41.6131    216000.0000        -3.5398        -3.5468
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 70000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 101.423
+LDB: ============== END OF LOAD BALANCING =============== 101.424
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 101.425
+LDB: ============= START OF LOAD BALANCING ============== 101.546
+LDB: 222 computes have load of zero
+LDB: Largest compute 90 load 0.037255 is 81.9% of average load 0.045477
+LDB: Average compute 0.002515 is 5.5% of average load 0.045477
+LDB: TIME 101.547 LOAD: AVG 0.0454771 MAX 0.0969291  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 101.548 LOAD: AVG 0.0454771 MAX 0.0969291  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 101.548 LOAD: AVG 0.0454771 MAX 0.0644948  PROXIES: TOTAL 192 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 101.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 101.553
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   75000       176.2253       497.8005       480.1495        26.1818          -1176.3940      -109.8264         0.0000         0.0000       659.9441            554.0808       309.0730      -105.8633       562.3011       297.2383            -41.2309       -38.5900    216000.0000        -0.9325        -0.9429
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 75000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 106.682
+LDB: ============== END OF LOAD BALANCING =============== 106.683
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 106.685
+LDB: ============= START OF LOAD BALANCING ============== 106.815
+LDB: 238 computes have load of zero
+LDB: Largest compute 90 load 0.024564 is 56.2% of average load 0.043742
+LDB: Average compute 0.002578 is 5.9% of average load 0.043742
+LDB: TIME 106.816 LOAD: AVG 0.0437423 MAX 0.0916219  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 106.817 LOAD: AVG 0.0437423 MAX 0.0916219  PROXIES: TOTAL 192 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 106.817 LOAD: AVG 0.0437423 MAX 0.0916219  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 106.819
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 106.824
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   80000       161.0740       532.9725       492.9699        36.9920          -1212.9591      -124.3515         0.0000         0.0000       635.1143            521.8122       297.4444      -113.3021       531.1844       304.4033            -43.4027       -41.6633    216000.0000        -3.1596        -3.1709
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 80000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 112.065
+LDB: ============== END OF LOAD BALANCING =============== 112.066
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 112.068
+LDB: ============= START OF LOAD BALANCING ============== 112.201
+LDB: 239 computes have load of zero
+LDB: Largest compute 90 load 0.026185 is 59.2% of average load 0.044222
+LDB: Average compute 0.002437 is 5.5% of average load 0.044222
+LDB: TIME 112.202 LOAD: AVG 0.0442221 MAX 0.101691  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 112.202 LOAD: AVG 0.0442221 MAX 0.101691  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 112.203 LOAD: AVG 0.0442221 MAX 0.101691  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 112.204
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 112.207
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 117.623
+LDB: ============== END OF LOAD BALANCING =============== 117.624
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 117.628
+LDB: ============= START OF LOAD BALANCING ============== 117.766
+LDB: 222 computes have load of zero
+LDB: Largest compute 90 load 0.024693 is 56.3% of average load 0.043840
+LDB: Average compute 0.002171 is 5.0% of average load 0.043840
+LDB: TIME 117.767 LOAD: AVG 0.0438402 MAX 0.102452  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 117.768 LOAD: AVG 0.0438402 MAX 0.102452  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 117.768 LOAD: AVG 0.0438402 MAX 0.102452  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 117.77
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 117.775
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   85000       163.5239       500.5659       490.1340        35.7791          -1208.5831      -121.0498         0.0000         0.0000       624.3195            484.6894       292.3889      -139.6301       493.7305       292.9693             18.7063        18.1432    216000.0000         0.2439         0.2466
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 85000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 123.155
+LDB: ============== END OF LOAD BALANCING =============== 123.156
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 123.158
+LDB: ============= START OF LOAD BALANCING ============== 123.294
+LDB: 223 computes have load of zero
+LDB: Largest compute 409 load 0.028917 is 66.3% of average load 0.043630
+LDB: Average compute 0.002434 is 5.6% of average load 0.043630
+LDB: TIME 123.295 LOAD: AVG 0.0436297 MAX 0.0946043  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 123.295 LOAD: AVG 0.0436297 MAX 0.0946043  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 123.296 LOAD: AVG 0.0436297 MAX 0.0946043  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 123.297
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 123.301
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   90000       164.7758       508.3351       485.6447        38.7966          -1196.5519      -114.8043         0.0000         0.0000       605.8371            492.0331       283.7330      -113.8040       500.6048       293.4501            -72.8669       -70.5649    216000.0000        -1.0060        -1.0030
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 90000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 129.054
+LDB: ============== END OF LOAD BALANCING =============== 129.054
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 129.056
+LDB: ============= START OF LOAD BALANCING ============== 129.202
+LDB: 222 computes have load of zero
+LDB: Largest compute 400 load 0.026257 is 58.8% of average load 0.044654
+LDB: Average compute 0.002352 is 5.3% of average load 0.044654
+LDB: TIME 129.203 LOAD: AVG 0.0446541 MAX 0.112583  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 129.203 LOAD: AVG 0.0446541 MAX 0.112583  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 129.204 LOAD: AVG 0.0446541 MAX 0.112583  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 129.205
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 129.21
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:   95000       181.8735       518.7636       474.3753        30.7000          -1187.0394      -112.4695         0.0000         0.0000       647.4430            553.6465       303.2183       -93.7965       560.4702       300.7603             52.8230        54.8907    216000.0000        -4.2257        -4.2234
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 95000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 135.353
+LDB: ============== END OF LOAD BALANCING =============== 135.354
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 135.357
+LDB: ============= START OF LOAD BALANCING ============== 135.518
+LDB: 212 computes have load of zero
+LDB: Largest compute 90 load 0.018821 is 41.4% of average load 0.045512
+LDB: Average compute 0.002050 is 4.5% of average load 0.045512
+LDB: TIME 135.519 LOAD: AVG 0.0455117 MAX 0.110054  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 135.519 LOAD: AVG 0.0455117 MAX 0.110054  PROXIES: TOTAL 190 MAXPE 10 MAXPATCH 16 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 135.52 LOAD: AVG 0.0455117 MAX 0.110054  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 135.521
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 135.524
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000       192.3148       513.0010       483.5489        34.5669          -1190.0706      -116.2599         0.0000         0.0000       624.9602            542.0614       292.6890       -82.8989       549.7541       302.4638           -159.9179      -157.0381    216000.0000        -6.5846        -6.5840
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 100000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 140.861
+LDB: ============== END OF LOAD BALANCING =============== 140.862
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 140.864
+LDB: ============= START OF LOAD BALANCING ============== 141.007
+LDB: 212 computes have load of zero
+LDB: Largest compute 90 load 0.029873 is 68.0% of average load 0.043910
+LDB: Average compute 0.002051 is 4.7% of average load 0.043910
+LDB: TIME 141.008 LOAD: AVG 0.0439097 MAX 0.108787  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 141.008 LOAD: AVG 0.0439097 MAX 0.108787  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 141.009 LOAD: AVG 0.0439097 MAX 0.108787  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 141.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 141.013
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 146.773
+LDB: ============== END OF LOAD BALANCING =============== 146.773
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 146.775
+LDB: ============= START OF LOAD BALANCING ============== 146.922
+LDB: 200 computes have load of zero
+LDB: Largest compute 90 load 0.021154 is 47.3% of average load 0.044719
+LDB: Average compute 0.001974 is 4.4% of average load 0.044719
+LDB: TIME 146.922 LOAD: AVG 0.0447186 MAX 0.113549  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 146.923 LOAD: AVG 0.0447186 MAX 0.113549  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 146.924 LOAD: AVG 0.0447186 MAX 0.113549  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 146.925
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 146.928
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  105000       169.2877       508.8425       475.9503        32.3094          -1183.6333      -133.1292         0.0000         0.0000       679.3721            548.9995       318.1718      -130.3726       558.6966       297.7849            -51.7365       -49.5722    216000.0000        -3.0704        -3.0658
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 105000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 152.324
+LDB: ============== END OF LOAD BALANCING =============== 152.325
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 152.326
+LDB: ============= START OF LOAD BALANCING ============== 152.467
+LDB: 212 computes have load of zero
+LDB: Largest compute 90 load 0.031352 is 70.6% of average load 0.044400
+LDB: Average compute 0.002055 is 4.6% of average load 0.044400
+LDB: TIME 152.468 LOAD: AVG 0.0443998 MAX 0.106952  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 152.469 LOAD: AVG 0.0443998 MAX 0.106952  PROXIES: TOTAL 191 MAXPE 10 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 152.469 LOAD: AVG 0.0443998 MAX 0.106952  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 152.47
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 152.475
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  110000       182.9625       513.7096       486.5344        32.2916          -1209.4958      -110.0844         0.0000         0.0000       624.5104            520.4283       292.4783      -104.0820       526.9350       301.6849            -13.6619       -10.4792    216000.0000        -2.1679        -2.1767
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 110000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 157.873
+LDB: ============== END OF LOAD BALANCING =============== 157.874
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 157.876
+LDB: ============= START OF LOAD BALANCING ============== 158.015
+LDB: 222 computes have load of zero
+LDB: Largest compute 409 load 0.020152 is 45.5% of average load 0.044273
+LDB: Average compute 0.002328 is 5.3% of average load 0.044273
+LDB: TIME 158.016 LOAD: AVG 0.0442728 MAX 0.0951643  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 158.017 LOAD: AVG 0.0442728 MAX 0.0951643  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 158.017 LOAD: AVG 0.0442728 MAX 0.0951643  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 158.019
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 158.022
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  115000       182.9032       500.5517       483.9889        29.2385          -1201.6630      -130.2269         0.0000         0.0000       638.5047            503.2970       299.0323      -135.2077       511.5923       292.1521            -19.1771       -16.6732    216000.0000        -1.2405        -1.2450
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 115000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 163.26
+LDB: ============== END OF LOAD BALANCING =============== 163.261
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 163.263
+LDB: ============= START OF LOAD BALANCING ============== 163.397
+LDB: 222 computes have load of zero
+LDB: Largest compute 409 load 0.027862 is 65.5% of average load 0.042510
+LDB: Average compute 0.002239 is 5.3% of average load 0.042510
+LDB: TIME 163.399 LOAD: AVG 0.0425103 MAX 0.103637  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 163.399 LOAD: AVG 0.0425103 MAX 0.103637  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 163.4 LOAD: AVG 0.0425103 MAX 0.103637  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 163.401
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 163.404
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  120000       159.0060       477.8058       475.6456        30.9079          -1142.4055      -115.4958         0.0000         0.0000       629.2399            514.7039       294.6933      -114.5359       520.7673       297.3132            -94.7422       -92.2944    216000.0000        -2.4000        -2.3981
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 120000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 168.788
+LDB: ============== END OF LOAD BALANCING =============== 168.789
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 168.793
+LDB: ============= START OF LOAD BALANCING ============== 168.932
+LDB: 222 computes have load of zero
+LDB: Largest compute 409 load 0.020362 is 47.7% of average load 0.042643
+LDB: Average compute 0.002139 is 5.0% of average load 0.042643
+LDB: TIME 168.933 LOAD: AVG 0.0426432 MAX 0.101647  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 168.934 LOAD: AVG 0.0426432 MAX 0.101647  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 168.934 LOAD: AVG 0.0426432 MAX 0.101647  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 168.936
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 168.941
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 174.258
+LDB: ============== END OF LOAD BALANCING =============== 174.259
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 174.261
+LDB: ============= START OF LOAD BALANCING ============== 174.394
+LDB: 231 computes have load of zero
+LDB: Largest compute 409 load 0.019773 is 46.4% of average load 0.042618
+LDB: Average compute 0.002352 is 5.5% of average load 0.042618
+LDB: TIME 174.396 LOAD: AVG 0.042618 MAX 0.0962706  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 174.396 LOAD: AVG 0.042618 MAX 0.0962706  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 174.397 LOAD: AVG 0.042618 MAX 0.0962706  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 174.398
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 174.401
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  125000       152.5121       497.0710       482.6502        36.7601          -1158.1578      -111.4223         0.0000         0.0000       642.8106            542.2240       301.0489      -100.5866       549.4239       296.7821             39.2927        42.5769    216000.0000        -9.3145        -9.3119
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 125000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 179.675
+LDB: ============== END OF LOAD BALANCING =============== 179.675
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 179.679
+LDB: ============= START OF LOAD BALANCING ============== 179.815
+LDB: 231 computes have load of zero
+LDB: Largest compute 409 load 0.024527 is 56.0% of average load 0.043771
+LDB: Average compute 0.002622 is 6.0% of average load 0.043771
+LDB: TIME 179.816 LOAD: AVG 0.0437712 MAX 0.0934813  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 179.816 LOAD: AVG 0.0437712 MAX 0.0934813  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 179.817 LOAD: AVG 0.0437712 MAX 0.0869467  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 179.818
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 179.821
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  130000       161.5463       522.2120       487.2845        37.5461          -1221.6323      -116.8374         0.0000         0.0000       631.8982            502.0175       295.9383      -129.8807       510.4236       295.1354             13.8123        16.4174    216000.0000        -6.0078        -6.0007
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 130000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 185.281
+LDB: ============== END OF LOAD BALANCING =============== 185.281
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 185.283
+LDB: ============= START OF LOAD BALANCING ============== 185.423
+LDB: 238 computes have load of zero
+LDB: Largest compute 409 load 0.022862 is 51.4% of average load 0.044479
+LDB: Average compute 0.002424 is 5.4% of average load 0.044479
+LDB: TIME 185.424 LOAD: AVG 0.0444791 MAX 0.101538  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 185.425 LOAD: AVG 0.0444791 MAX 0.101538  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 185.425 LOAD: AVG 0.0444791 MAX 0.101538  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 185.427
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 185.43
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  135000       167.2458       496.7552       497.4524        27.1934          -1171.6726      -104.0438         0.0000         0.0000       610.5951            523.5255       285.9613       -87.0696       531.1473       294.4713            -76.0363       -73.3787    216000.0000         0.3488         0.3518
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 135000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 191.047
+LDB: ============== END OF LOAD BALANCING =============== 191.047
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 191.049
+LDB: ============= START OF LOAD BALANCING ============== 191.199
+LDB: 223 computes have load of zero
+LDB: Largest compute 409 load 0.024212 is 55.2% of average load 0.043824
+LDB: Average compute 0.002371 is 5.4% of average load 0.043824
+LDB: TIME 191.2 LOAD: AVG 0.0438237 MAX 0.115705  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 191.2 LOAD: AVG 0.0438237 MAX 0.115705  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 191.2 LOAD: AVG 0.0438237 MAX 0.115705  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 191.201
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 191.204
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  140000       181.0147       549.7098       475.2685        35.4423          -1199.1167      -126.7724         0.0000         0.0000       605.2638            520.8100       283.4645       -84.4538       526.2068       293.3910           -120.7332      -117.8356    216000.0000         0.9434         0.9505
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 140000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 196.644
+LDB: ============== END OF LOAD BALANCING =============== 196.645
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 196.648
+LDB: ============= START OF LOAD BALANCING ============== 196.789
+LDB: 239 computes have load of zero
+LDB: Largest compute 205 load 0.019406 is 42.9% of average load 0.045191
+LDB: Average compute 0.002553 is 5.6% of average load 0.045191
+LDB: TIME 196.79 LOAD: AVG 0.0451906 MAX 0.102211  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 196.791 LOAD: AVG 0.0451906 MAX 0.102211  PROXIES: TOTAL 190 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 196.792 LOAD: AVG 0.0451906 MAX 0.0734756  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 196.793
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 196.796
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 202.452
+LDB: ============== END OF LOAD BALANCING =============== 202.453
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 202.454
+LDB: ============= START OF LOAD BALANCING ============== 202.598
+LDB: 231 computes have load of zero
+LDB: Largest compute 409 load 0.035767 is 80.2% of average load 0.044574
+LDB: Average compute 0.002788 is 6.3% of average load 0.044574
+LDB: TIME 202.599 LOAD: AVG 0.0445743 MAX 0.086122  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 202.6 LOAD: AVG 0.0445743 MAX 0.086122  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 202.6 LOAD: AVG 0.0445743 MAX 0.0781841  PROXIES: TOTAL 192 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 202.602
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 202.605
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ENERGY:  145000       173.8501       481.2590       481.2026        36.9525          -1191.3711      -116.1747         0.0000         0.0000       609.0513            474.7696       285.2383      -134.2817       481.4697       299.7245           -154.9706      -151.8652    216000.0000        -3.8383        -3.8454
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 145000
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+LDB: ============= START OF LOAD BALANCING ============== 207.88
+LDB: ============== END OF LOAD BALANCING =============== 207.881
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 207.883
+LDB: ============= START OF LOAD BALANCING ============== 208.021
+LDB: 212 computes have load of zero
+LDB: Largest compute 205 load 0.023990 is 55.4% of average load 0.043298
+LDB: Average compute 0.002117 is 4.9% of average load 0.043298
+LDB: TIME 208.022 LOAD: AVG 0.0432975 MAX 0.101439  PROXIES: TOTAL 180 MAXPE 10 MAXPATCH 10 None MEM: 2728.52 MB
+LDB: TIME 208.022 LOAD: AVG 0.0432975 MAX 0.101439  PROXIES: TOTAL 192 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: TIME 208.023 LOAD: AVG 0.0432975 MAX 0.101439  PROXIES: TOTAL 191 MAXPE 11 MAXPATCH 17 RefineTorusLB MEM: 2728.52 MB
+LDB: ============== END OF LOAD BALANCING =============== 208.024
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 208.029
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+TCL: namdcph) Proposal rejected.
+TCL: Running for 500 steps without repeating first step
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000       161.7744       543.6908       492.7423        37.0133          -1207.6724      -100.3086         0.0000         0.0000       613.8159            541.0556       287.4697       -72.7603       547.3072       294.5214            136.7062       137.4579    216000.0000         0.2112         0.2062
+
+WRITING COORDINATES TO DCD FILE 2/Pre2_0.dcd AT STEP 150000
+TCL: namdcph) Proposal rejected.
+TCL: namdcph) *************************************************
+TCL: namdcph) CONSTANT pH MD STATISTICS:
+TCL: namdcph) move label                : attempts accept. rate
+TCL: namdcph) PP1:918:GLU               :        0         0.00
+TCL: namdcph) PP1:921:LYS               :        0         0.00
+TCL: namdcph) PP1:933:LYS               :        0         0.00
+TCL: namdcph) PP1:936:ASP               :        0         0.00
+TCL: namdcph) PP1:947:LYS               :        0         0.00
+TCL: namdcph) PP1:964:LYS               :        0         0.00
+TCL: namdcph) *************************************************
+TCL: Exiting due to exit command.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 150000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 150000
+CLOSING COORDINATE DCD FILE 2/Pre2_0.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 150000
+The last velocity output (seq=-2) takes 0.002 seconds, 2728.645 MB of memory in use
+====================================================
+
+WallClock: 210.352097  CPUTime: 64.905701  Memory: 2728.644531 MB
+[Partition 0][Node 0] End of program
